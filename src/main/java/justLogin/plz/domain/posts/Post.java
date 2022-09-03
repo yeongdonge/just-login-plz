@@ -1,5 +1,6 @@
 package justLogin.plz.domain.posts;
 
+import justLogin.plz.web.dto.PostUpdateRequestDto;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -28,5 +29,10 @@ public class Post {
         this.title = title;
         this.content = content;
         this.author = author;
+    }
+
+    public void update(String title, String content) {
+        this.title = title;
+        this.content = content;
     }
 }
