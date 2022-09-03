@@ -1,5 +1,6 @@
 package justLogin.plz.domain.posts;
 
+import justLogin.plz.domain.BaseTimeEntity;
 import justLogin.plz.web.dto.PostUpdateRequestDto;
 import lombok.Builder;
 import lombok.Getter;
@@ -10,7 +11,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Getter
 @Entity
-public class Post {
+public class Post extends BaseTimeEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
